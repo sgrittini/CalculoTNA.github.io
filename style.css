@@ -1,16 +1,18 @@
-*{
+* {
     padding: 0px;
     margin: 0px;
 }
-body{
+
+body {
     background-color: rgb(140, 140, 231);
 }
-div{
+
+div {
     margin: 20px;
-    border:1px black solid;
+    border: 1px black solid;
 }
 
-.divCheck{
+.divCheck {
     margin: 5px;
     padding: 5px;
     width: 350px;
@@ -19,64 +21,98 @@ div{
     align-items: flex-start;
     border: 1px black solid;
 }
-.divCheck p,input{
+
+.divCheck p,
+input {
     margin: 3px;
     font-size: large;
 }
 
-.contenedorBotones{
+.contenedorBotones {
     display: grid;
     justify-items: center;
 }
 
-.contenedorBotones .inpInversion{
-    width: 150px;
+.contenedorBotones .inpInversionpesos {
+    width: 80%;
     height: 30px;
-    font-size: large;
-    font-weight: bold;    
+    font-size:  xx-large;
+    font-weight: bold;
 }
 
-.contenedorBotones .divInput{
-    display: flex; 
-    border: none; 
+.contenedorBotones .divInput {
+    display: flex;
+    border: none;
 }
-.contenedorBotones .divInput p{
+
+.contenedorBotones .divInput p {
     font-size: xx-large;
     font-weight: bolder;
-    
+
 }
-.contenedorBotones .divInput .p1{
+
+.contenedorBotones .divInput .p1 {
     margin-left: 200px;
-    
+
 }
 
-.contenedorBotones .inpTasa{
-    width: 100px;
+.contenedorBotones .inpTasa {
+    width: 30%;
     height: 30px;
     font-size: xx-large;
     font-weight: bolder;
-    text-align: center;  
-     
+    text-align: center;
+
 }
 
-.contenedorBotones button{
+.contenedorBotones button {
     height: 50px;
     width: 100px;
     background-color: aqua;
     font-size: large;
-    font-weight: bolder;    
+    font-weight: bolder;
 }
 
 
-.contenedorFooter{
+.contenedorFooter {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     border: none;
-    
-   
+
+
 }
-.contenedorFooter  div{
-    font-weight: bolder;    
-    border: none;  
+
+.contenedorFooter div {
+    font-weight: bolder;
+    border: none;
+}
+
+@media screen and (min-width:200px) {
+    div {
+        margin: 0px;
+        border: none;
+    }
+    .contenedorBotones{
+        display: grid;
+        justify-items: auto;
+    }
+    .contenedorBotones .divInput .p1 {
+        margin-left: 2px;
+
+    }
+
+    .contenedorBotones .divInput p {
+        font-size: medium;
+        font-weight: bolder;
+    
+    }
+    .contenedorBotones .inpInversionpesos {
+        width: 80%;
+        height: 30px;
+        font-size:  large;
+        font-weight: bold;
+        text-align: center;
+    }
+
 }
